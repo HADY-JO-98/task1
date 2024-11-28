@@ -4,71 +4,74 @@
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
 }
-
-
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ccc;
+    background-color: #da8;
     padding: 15px 20px;
 }
-
-.logo {
+.header h1 {
     font-weight: bold;
     font-size: 20px;
-    color: white;
-    background-color: black;
+    color: black;
+    background: #da8;
     padding: 5px 15px;
     text-transform: uppercase;
 }
-
+.header h2{
+    background: #da8;
+}
 .header h2 span {
     margin: 0 10px;
     font-size: 16px;
     font-weight: bold;
+    background-color: #da8;
 }
-
 .main-content {
-    background-color: #ff6b6b;
+    background-color: #4ab;
     color: white;
+    height: calc(100vh - 166px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 50px 0;
     margin: 0;
     font-size: 24px;
     text-transform: capitalize;
 }
-
-
+.main-content h1{
+    background: rgba(0, 0, 0, 0);
+}
 .background-section {
-    background-image: url('../../NLPS/background.png');
+    background-image: url(../images/1714336236117.jpeg);
     background-size: cover;
     background-position: center;
-    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
     text-align: center;
     padding: 40px 20px;
 }
-
 .background-section p {
-    background-image: url('../../NLPS/background.png');
+    background: rgba(0, 0, 0, 0);
     margin: 0;
     line-height: 1.8;
     font-size: 18px;
 }
-
-/* Image Section */
 .image-section {
     text-align: center;
     padding: 40px 20px;
 }
-
 .image-section img {
     width: 100%;
     max-width: 600px;
     height: auto;
     margin-bottom: 20px;
 }
-
 .image-section p {
     font-size: 16px;
     line-height: 1.6;
