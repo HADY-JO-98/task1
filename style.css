@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ccc;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    padding: 5px 15px;
+    text-transform: uppercase;
+}
+
+.header h2 span {
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.main-content {
+    background-color: #ff6b6b;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    margin: 0;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+
+.background-section {
+    background-image: url('../../NLPS/background.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.background-section p {
+    background-image: url('../../NLPS/background.png');
+    margin: 0;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+/* Image Section */
+.image-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.image-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 20px auto;
+    width: 80%;
+}
