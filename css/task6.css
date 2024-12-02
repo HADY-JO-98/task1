@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.Desert,.Forest,.Canyon,.Glasier{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 250px;
+}
+.Desert{
+    background-image:url(../image/deser.jpg);
+}
+.Forest{
+    background-image:url(../image/forest.webp);
+}
+.Canyon{
+    background-image:url(../image/canyon.webp);
+}
+.Glasier{
+    background-image:url(../image/glasier.webp);
+}
+.Desert h3,.Forest h3,.Canyon h3,.Glasier {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+.Desert h3{
+    animation: bounce 1.5s infinite;
+}
+.Forest h3{
+    animation: rightleft 1.5s infinite;
+}
+.Canyon h3{
+    animation: rotate 1.5s infinite;
+}
+.Glasier h3{
+    animation: scale 1.5s infinite;
+}
+@keyframes bounce{
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-50px);
+    }
+    75% {
+        transform: translateY(25px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes rightleft{
+    0% {
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(50px);
+    }
+    75%{
+        transform: translateX(-50px);
+    }
+}
+@keyframes rotate{
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes scale {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
