@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.piano{
+    width: 100%;
+    height: 250px;
+}
+.pianobutt{
+    display: inline-block;
+    width: calc(100% / 8 - 5px);
+    height: 100%;
+    text-align: center;
+    padding: calc(250px/2) calc(95px/2);
+}
+.pianobutt1,.pianobutt3,.pianobutt5,.pianobutt7{
+    background-color: black;
+    color: white;
+}
+.pianobutt2,.pianobutt4,.pianobutt6,.pianobutt8{
+    background-color: white;
+}
+.pianobutt2:hover,.pianobutt4:hover,.pianobutt6:hover,.pianobutt8:hover{
+    background-color: black;
+    color: white;
+}
+.pianobutt1:hover,.pianobutt3:hover,.pianobutt5:hover,.pianobutt7:hover{
+    background-color: white;
+    color: black;
+}
+.sec1 > .pianobutt,.sec2 > .pianobutt{
+    display: inline-block;
+    width: calc(100% / 8 - 5px);
+    height: 100%;
+}
+.sec1{
+    width: 100%;
+}
+.sec1:hover .pianobutt{
+    background-color: black;
+    color: white;
+}
+.sec2{
+    width: 100%;
+}
+.sec2:hover .pianobutt{
+    background-color: white;
+    color: black;
+}
+.table{
+    padding: 15px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #3c3d37;
+}
+table th, table td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: left;
+    color: #eeeeee;
+}
+table th {
+    background-color: #4CAF50;
+    color: white;
+}
+table tr:nth-child(even) {
+    background-color: #2A2D2E;
+}
+table tr:hover {
+    background-color: #1e201e;
+}
+.photos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.photo{
+    width:300px;
+    transition: ease-in all .2s;
+}
+.tl:hover{
+    filter: blur(10px);
+    border-radius: 50%;
+}
+.tr:hover{
+    filter: grayscale(50%);
+    border-radius: 50%;
+}
+.bl:hover{
+    filter: contrast(50%);
+    border-radius: 25%;
+}
+.br:hover{
+    filter:sepia(75%);
+    border-radius: 25%;
+}
