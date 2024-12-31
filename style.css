@@ -1,0 +1,65 @@
+ *{
+    margin: 0;
+    padding: 0;
+}/*
+section{
+    margin: 10px 0;
+    border: 3px black solid;
+    display: flex;
+    height: 250px;
+}
+div{
+    background-color: red;
+    padding: 10px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div:nth-child(odd){
+    background-color: rgb(255, 255, 255);
+} */
+/* section{
+    width: 600px;
+    height:600px;
+    border: 2px black solid;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,auto);
+    grid-gap: 5px 10px;
+}
+div{
+    background-color: red;
+} */
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows:60px 1fr 100px;
+    grid-template-areas:"head head head head head"
+                        "nav content content content content  "
+                        "foot foot foot foot foot"
+    ;
+}
+
+header{
+    background-color: khaki;
+    grid-area: head;
+}
+
+nav{
+    background-color: rgb(214, 199, 65);
+    grid-area: nav;
+}
+
+section{
+    background-color: rgb(102, 98, 61);
+    grid-area: content;
+}
+
+footer{
+    background-color: rgb(112, 102, 11);
+    grid-area: foot;
+}
